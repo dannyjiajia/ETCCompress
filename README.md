@@ -40,3 +40,6 @@ example:build for vs2013 (only for win32)
 ~~~
 
 ~you can build with cmake gui~
+
+---
+DannyHe
