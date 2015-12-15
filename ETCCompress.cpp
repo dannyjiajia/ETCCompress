@@ -22,7 +22,7 @@ int ETCCompress::compressETC(const char * destpath,const char *srcpath)
     ZipHeaderInfo zipHeader;
     
     
-    FILE* inFile = fopen(srcpath, "rt");
+    FILE* inFile = fopen(srcpath, "rb");
     
     if(!inFile)
     {
@@ -68,7 +68,7 @@ int ETCCompress::compressETC(const char * destpath,const char *srcpath)
     << '\n';
     
     
-    FILE* fo = fopen(destpath, "wb");
+    FILE* fo = fopen(destpath, "wb+");
     if(fo)
     {
         fwrite(&zipHeader, sizeof(zipHeader), 1, fo);
@@ -115,7 +115,7 @@ uLongf ETCCompress::unCompressETC(const char * packData,int packSize,Bytef* &buf
 
 int ETCCompress::unCompressETC(const char *destpath, const char *srcpath)
 {
-    FILE* packFile = fopen(srcpath, "rt");
+    FILE* packFile = fopen(srcpath, "rb");
     
     fseek(packFile, 0, SEEK_END);
     int packSize = ftell(packFile);
@@ -131,7 +131,7 @@ int ETCCompress::unCompressETC(const char *destpath, const char *srcpath)
         return -1;
     }
     
-    FILE* ft = fopen(destpath, "wb");
+    FILE* ft = fopen(destpath, "wb+");
     if(ft)
     {
         fwrite(pUnBuf,newSize, 1, ft);
