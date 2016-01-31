@@ -19,7 +19,7 @@ Compress the etc format texture with zlib.
 
 ## how to build 
 
-### Mac Os
+### Mac 
 
 build for xcode
 
