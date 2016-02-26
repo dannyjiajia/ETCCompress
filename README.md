@@ -39,7 +39,7 @@ example:build for vs2013 (only for win32)
     cmake -G "Visual Studio 12 2013" ..
 ~~~
 
-~you can build with cmake gui~
+you can build with cmake gui
 
 ---
 DannyHe
