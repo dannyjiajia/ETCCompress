@@ -2,22 +2,21 @@
 
 Compress the etc format texture with zlib.
 
-## how to use 
+## How to use 
 
-
-* compress file
+compress file
 
 ~~~
     CompressETCTexture pack ~/Desktop/test.pvr ~/Desktop/compressed.pvr
 ~~~
 
-* uncompress file
+uncompress file
 
 ~~~
     CompressETCTexture unpack ~/Desktop/compressed.pvr ~/Desktop/test_compressed.pvr
 ~~~
 
-## how to build 
+## How to build 
 
 ### Mac 
 
@@ -31,15 +30,10 @@ build for xcode
 
 ### Windows
 
-example:build for vs2013 (only for win32)
+build for vs2013 (only for win32)
 
 ~~~
 	mkdir build
 	cd build
     cmake -G "Visual Studio 12 2013" ..
 ~~~
-
-you can build with cmake gui
-
----
-DannyHe
