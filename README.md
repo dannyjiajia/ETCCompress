@@ -1,4 +1,4 @@
-#ETCCompress
+# ETCCompress
 
 Compress the etc format texture with zlib.
 
@@ -23,9 +23,9 @@ uncompress file
 build for xcode
 
 ~~~
-	mkdir build
-	cd build
-    cmake -G "Xcode" ..
+mkdir build
+cd build
+cmake -G "Xcode" ..
 ~~~
 
 ### Windows
@@ -33,7 +33,7 @@ build for xcode
 build for vs2013 (only for win32)
 
 ~~~
-	mkdir build
-	cd build
-    cmake -G "Visual Studio 12 2013" ..
+mkdir build
+cd build
+cmake -G "Visual Studio 12 2013" ..
 ~~~
